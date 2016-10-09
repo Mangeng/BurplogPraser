@@ -9,7 +9,7 @@ except ImportError:
     _default_dict = dict
 
 class BurplogParser(object):
-    def __init__(self, filename, default=None, dict_type=_default_dict):
+    def __init__(self, filename, dict_type=_default_dict):
         self.dict = dict_type
         self.fp = open(filename)  
             
