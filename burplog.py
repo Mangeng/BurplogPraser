@@ -91,6 +91,8 @@ if __name__ == '__main__':
             print json.dumps(packbag, indent=4)
     except StopIteration:
         pass
+    for packbag in burplog:
+        print json.dumps(packbag, indent=4)
     burplog.close()
     
     
