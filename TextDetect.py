@@ -17,7 +17,7 @@ class TextDetect(object):
         if not s: 
             return 1
         t = s.translate(self.null_trans, self.text_characters)
-        if len(t) / len(s) > 0.30:
+        if len(t) * 1.00 / len(s) > 0.30:
             return 0
         return 1
 
